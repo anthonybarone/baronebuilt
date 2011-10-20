@@ -1,2 +1,174 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!-------------------------------------------------------------------------------------------------------------- 
+Beginning of blueprintcss div classes container and showgrid (divs identify the structural sections of a document and are 
+used for laying out a web page using CSS. The div element can be used to group almost any elements together.
+Example core attributes of the div block element include div id="" class="", etc.  
+
+The id attribute provides a unique identifier for an element within the document.  This identifier may be used in CSS code 
+as a hook that can be used for styling purposes, or by JavaScript code (via the Document Object Model, or DOM) to make 
+changes or add behavior to the element by referencing its unique id.  The most important aspect of the id attribute is 
+that it must be absolutely unique.  Unlike the class attribute, which may apply the same value to many elements in a page, 
+an id that’s applied to an element must not match an id used anywhere else on the same page.
+
+While the name of an element specifies its type, the class attribute lets you assign to it one or more subtypes. These 
+subtypes can also be used in CSS code for styling purposes, or by JavaScript code (via the Document Object Model, or DOM) 
+to make changes, or add behavior, to elements belonging to a particular subtype.
+
+showgrid
+-------------------------------------------------------------------------------------------------------------->
+
+<div id="css_container" class="container">
+
+    <!-------------------------------------------------------------------------------------------------------------- 
+    The following div block element is assigned to class subtype span-21 to indicate spanning the first 21 columns in the grid. 
+    In general, subtypes may be used in CSS code for styling purposes, or by JavaScript code (via the Document Object Model, or DOM)
+    to make changes, or add behavior, to elements belonging to a particular subtype. The class span-21 is linked to the .span-21 
+    class in the screen.css stylesheet.
+    -------------------------------------------------------------------------------------------------------------->
+  
+	  <div class="span-21 prepend-top">
+		  <script type="text/javascript">
+	      <!-- 
+	      // Array of day names
+	      var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday",
+	      				"Thursday","Friday","Saturday");
+	      var now = new Date();
+	      document.write("Enjoy your " + dayNames[now.getDay()] + ".");
+	      // -->
+	      </script>
+	    </div>
+
+      <!-------------------------------------------------------------------------------------------------------------- 
+      The following div block element is assigned to class subtype span-3 last to indicate spanning the next 3 columns in the grid
+      and is the last for this row. The class span-3 and class last is linked to the 
+  		.span-3 and .last (the last column in a row needs this class) classes in the screen.css stylesheet.
+      -------------------------------------------------------------------------------------------------------------->
+	    
+	   <div class="span-3 prepend-top last">
+        <a href="https://barone.projectpath.com/" class="signin">Customer Sign in</a>
+		 </div>
+
+    <!-------------------------------------------------------------------------------------------------------------- 
+    The following div block element is assigned to class subtype span-24 to indicate spanning all 24 columns in the grid
+    and is the last for this row. The class span-24 and class last is linked to the 
+		.span-24 and .last (the last column in a row needs this class) classes in the screen.css stylesheet.
+    -------------------------------------------------------------------------------------------------------------->
+
+		<div class="span-24 last">
+      </br>
+      <center>
+		  <%= image_tag("bands_logo_pg_half.jpg", :alt => "Barone & Sons Logo", :size => "250x125") %>
+		  </center>
+		  </br>
+		</div>
+
+    <!-------------------------------------------------------------------------------------------------------------- 
+    The following div block element is assigned to class subtype span-18 to indicate the first 4 tabs spanning the first 
+    18 columns in the grid. The class span-18 is linked to the .span-18 class in the screen.css stylesheet.  
+    -------------------------------------------------------------------------------------------------------------->
+
+    <div class="span-18">
+
+    <!-------------------------------------------------------------------------------------------------------------- 	  
+    The unordered list (ul) is assigned to class tabs.  The tabs plugin is part of the blueprintcss css framework.  It is 
+    referenced in the applicaiton.html.erb by including the line < %= stylesheet_link_tag 'blueprint/plugins/tabsplugin/screen',
+    :media => 'screen,projection' % > which references the screen.css file in the stylesheets/blueprint/plugins/tabsplugin 
+    directory.
+    -------------------------------------------------------------------------------------------------------------->    
+
+    <ul class="tabs">
+    	<li> <a href="home" class="selected">Home</a> </li>
+    	<li> <a href='neighborhoods'>Neighborhoods</a> </li>
+    	<li> <a href='model_home'>Model Home</a> </li>
+    	<li> <a href='photo_gallery'>Photo Gallery</a> </li>
+    </div>
+
+    <div class="span-6 last">
+    <ul class='tabs'>
+    	<li><a href='our_story'>Our Story</a> </li>
+    	<li><a href='contact_us'>Contact US</a> </li>
+    </div>
+    </br>
+
+    <div class="span-24 below-tabs last">
+    </br>
+    </div>    
+
+    <!-------------------------------------------------------------------------------------------------------------- 
+    The following div block element is assigned to class subtype span-24 to indicate spanning all 24 columns in the grid
+    and is the last for this row. The class span-24 and class last is linked to the 
+		.span-24 and .last (the last column in a row needs this class) classes in the screen.css stylesheet.
+    -------------------------------------------------------------------------------------------------------------->
+		<div class="span-24 last">
+		</br>
+		<center>		
+		<H1>Making the new home building<br/>
+		process easy and enjoyable.</H1>
+		</center>
+		</div>
+
+	  <div class="span-8">
+	  <center>
+    <H2>Select.</H2>
+    </center>
+		</div>	
+		
+		<div class="span-8">
+	  <center>
+    <H2>Build.</H2>
+    </center>
+		</div>	
+
+	  <div class="span-8 last">
+	  <center>
+    <H2>Live.</H2>
+    </center>
+		</div>
+
+	  <div class="span-8">
+		<hr>
+		<center>
+		<h5>Select home site.<br>
+		Select home design.<br>
+		Select home features.</h5>
+		<h6>Easy and enjoyable.</h6>
+		</center>
+		<hr>
+		</div>
+
+	  <div class="span-8">
+		<hr>
+		<center>
+		<h5>Build home structure.<br>
+		Build home systems.<br>
+		Build home finishes.</h5> 
+		<h6>Easy and enjoyable.</h6>
+		</center>
+		<hr>
+		</div>
+
+	  <div class="span-8 last">
+    <hr>
+    <center>
+		<h5>Live once.<br>
+		Live well.<br>
+		Live Barone.</h5>
+		<h6>Easy and enjoyable.</h6>
+		</center>
+    <hr>
+    <br>
+		</div>
+		
+		<div class="span-24 footer last">
+		<center>
+		All text and design is copyright ©2004-2011 Barone & Sons, LLC. All rights reserved.
+		</center>
+		</div>
+<!-------------------------------------------------------------------------------------------------------------- 
+End of blueprintcss grid container
+-------------------------------------------------------------------------------------------------------------->
+</div>
+
+<!-------------------------------------------------------------------------------------------------------------- 
+After Grid Contaier
+-------------------------------------------------------------------------------------------------------------->
+

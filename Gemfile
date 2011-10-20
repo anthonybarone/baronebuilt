@@ -2,6 +2,8 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.1'
 
+gem "compass", ">= 0.11.5"
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -28,7 +30,9 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 group :development do
 	gem 'rspec-rails', '2.0.0.beta.18'
-#	gem 'webrat'
+	gem 'autotest-growl'
+	gem 'autotest-fsevent'
+	gem 'webrat'
 end
 
 group :test do
