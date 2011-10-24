@@ -27,14 +27,14 @@
   padding:0;
 }
 .tabs li a { 
-  background:#CCCC99;
+  background:#ddd;
   border:0px solid #XXXXXX;
   border-bottom:none;
   color:#222;
   cursor:pointer;
   display:block;
   float:left;
-  font-weight:bold;
+  font-weight:none;
   padding:.15em .33em .25em .33em;
 }
 .tabs li a.selected { 

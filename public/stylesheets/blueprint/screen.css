@@ -27,13 +27,13 @@ a img {border:none;}
 
 /* typography.css */
 html {font-size:100.00%;}
-body {font-size:100%;color:#333;background:#FFFFFF;font-family:"times new roman", veranda, Lucida Grande, Helvetica, sans-serif;}
+body {font-size:85%;color:#000000;background:#FFFFFF;font-family:"Times New Roman", Lucida Grande, veranda, sans-serif;}
 h1, h2, h3, h4, h5, h6 {font-weight:normal;}
 h1 {font-size:3em;line-height:1;margin-bottom:0.5em;color:#333333;}
 h2 {font-size:2em;margin-bottom:0.0em;color:#333333;}
 h3 {font-size:1.5em;line-height:1;margin-bottom:1em;color:#333333;}
 h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;color:#333333;}
-h5 {font-size:1em;margin-bottom:0em;color:#333333;background:#CCCC99;}
+h5 {font-size:1em;margin-bottom:0em;color:#333333;background:#DDDDDD;}
 h6 {font-size:1em;font-weight:bold;color:#FFFFFF;background:#333333;}
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
 p {margin:0 0 1.5em;}
@@ -60,12 +60,12 @@ dl {margin:0 0 1.5em 0;}
 dl dt {font-weight:bold;}
 dd {margin-left:1.5em;}
 table {margin-bottom:1.4em;width:100%;}
-th {font-weight:bold;}
+th {}
 thead th {background:#c3d9ff;}
 th, td, caption {padding:4px 10px 4px 5px;}
-tbody tr:nth-child(even) td, tbody tr.even td {background:#e5ecf9;}
+tbody tr:nth-child(even) td, tbody tr.even td {background:#CCCC99;}
 tfoot {font-style:italic;}
-caption {background:#eee;}
+caption {background:#CCCC99;}
 .small {font-size:.8em;margin-bottom:1.875em;line-height:1.875em;}
 .large {font-size:1.2em;line-height:2.5em;margin-bottom:1.25em;}
 .hide {display:none;}
@@ -260,7 +260,7 @@ input.span-24, textarea.span-24 {width:938px;}
 div.prepend-top, .prepend-top {margin-top:1.5em;}
 div.append-bottom, .append-bottom {margin-bottom:1.5em;}
 .box {padding:1.5em;margin-bottom:1.5em;background:#e5eCf9;}
-hr {background:#000;color:#000;clear:both;float:none;width:100%;height:5px;margin:5 5 5px;border:none;}
+hr {background:#000;color:#333333;clear:both;float:none;width:100%;height:3px;margin:0 5 0px;border:none;}
 hr.space {background:#fff;color:#fff;visibility:hidden;}
 .clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
 .clearfix, .container {display:block;}
@@ -268,5 +268,19 @@ hr.space {background:#fff;color:#fff;visibility:hidden;}
 
 /* customizations to grid.css */
 .below-tabs {background:#333333;}
+.hr-below-tabs {line-height:0.25;background:#333333;}
+
+/* Use this to create a horizontal ruler across a column under tabs. */
+.hrtab {
+  background: #333333;
+  color: #FFF;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 3px;
+  margin: 0 0 17px;
+  border: none;
+}
+
 .footer {background:#FFFFFF;}
 
