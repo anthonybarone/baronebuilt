@@ -1,2 +1,105 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+<div id="css_container" class="container">
+
+    <!-------------------------------------------------------------------------------------------------------------- 
+    The following div block element is assigned to class subtype span-21 to indicate spanning the first 21 columns in the grid. 
+    In general, subtypes may be used in CSS code for styling purposes, or by JavaScript code (via the Document Object Model, or DOM)
+    to make changes, or add behavior, to elements belonging to a particular subtype. The class span-21 is linked to the .span-21 
+    class in the screen.css stylesheet.
+    -------------------------------------------------------------------------------------------------------------->
+  
+	  <div class="span-21 prepend-top">
+		  <script type="text/javascript">
+	      <!-- 
+	      // Array of day names
+	      var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday",
+	      				"Thursday","Friday","Saturday");
+	      var now = new Date();
+	      document.write("Enjoy your " + dayNames[now.getDay()] + ".");
+	      // -->
+	      </script>
+	    </div>
+
+      <!-------------------------------------------------------------------------------------------------------------- 
+      The following div block element is assigned to class subtype span-3 last to indicate spanning the next 3 columns in the grid
+      and is the last for this row. The class span-3 and class last is linked to the 
+  		.span-3 and .last (the last column in a row needs this class) classes in the screen.css stylesheet.
+      -------------------------------------------------------------------------------------------------------------->
+	    
+	   <div class="span-3 prepend-top last">
+        <a href="https://barone.projectpath.com/" class="signin">Customer Sign in</a>
+		 </div>
+
+    <!-------------------------------------------------------------------------------------------------------------- 
+    The following div block element is assigned to class subtype span-24 to indicate spanning all 24 columns in the grid
+    and is the last for this row. The class span-24 and class last is linked to the 
+		.span-24 and .last (the last column in a row needs this class) classes in the screen.css stylesheet.
+    -------------------------------------------------------------------------------------------------------------->
+
+		<div class="span-24 last">
+      </br>
+      <center>
+		  <%= image_tag("logos/bands_logo_half.jpg", :alt => "Barone & Sons Logo", :size => "250x125") %>
+		  </center>
+		  </br>
+		</div>
+
+    <!-------------------------------------------------------------------------------------------------------------- 
+    The following div block element is assigned to class subtype span-18 to indicate the first 4 tabs spanning the first 
+    18 columns in the grid. The class span-18 is linked to the .span-18 class in the screen.css stylesheet.  
+    -------------------------------------------------------------------------------------------------------------->
+
+    <div class="span-21">
+
+    <!-------------------------------------------------------------------------------------------------------------- 	  
+    The unordered list (ul) is assigned to class tabs.  The tabs plugin is part of the blueprintcss css framework.  It is 
+    referenced in the applicaiton.html.erb by including the line < %= stylesheet_link_tag 'blueprint/plugins/tabsplugin/screen',
+    :media => 'screen,projection' % > which references the screen.css file in the stylesheets/blueprint/plugins/tabsplugin 
+    directory.
+    -------------------------------------------------------------------------------------------------------------->    
+
+    <ul class="tabs">
+    	<li> <a href="home">Home</a> </li>
+    	<li> <a href="neighborhoods">Neighborhoods</a> </li>
+    	<li> <a href="model_home">Model Home</a> </li>
+    	<li> <a href='photo_gallery'>Photo Gallery</a> </li>
+    </div>
+
+    <div class="span-3 last">
+    <ul class='tabs'>
+ <!--   	<li><a href='our_story'>Our Story</a> </li> -->
+    	<li><a href='contact' class="selected">Contact US</a> </li>
+    </div>
+    </br>
+
+    <div class="span-24 hrtab last">
+    <p> </p>
+    </div>
+
+	<script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+	<script type="text/javascript">
+	var z7x3k1 = new WufooForm();
+	z7x3k1.initialize({
+	'userName':'baroneforms', 
+	'formHash':'z7x3k1', 
+	'autoResize':true,
+	'height':'597',
+	'header':'show'});
+	z7x3k1.display();
+	</script>
+
+    <div class="span-24 footer last">
+    </br>
+		<center>
+		All text and design is copyright ©2004-2011 Barone & Sons, LLC. All rights reserved.
+		<br>
+		<br>
+		Call (585) 872-1490
+		</center>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------------- 
+    End of blueprintcss grid container
+    -------------------------------------------------------------------------------------------------------------->
+    </div>
+
+

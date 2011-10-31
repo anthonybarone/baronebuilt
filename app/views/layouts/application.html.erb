@@ -1,23 +1,85 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-  "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
-
   <head>
-    <title>Barone & Sons Distinctive homes.</title>
+    <title>Barone & Sons Photogallery with jQuery.</title>
     <meta name="description" content="Good bye to buyer remorse.  Five years from now, you'll be happy you built with Barone." />
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="Minimalistic Slideshow Gallery with jQuery" />
+    <meta name="keywords" content="minimalistic, slideshow, jquery, gallery, thumbnails, css3"/>
 	<meta name="viewport" content="width=1065" />
 
+
+<!-- INCORPORATE GOOGLE ANALYTICS INTO MY MAIN APPLICATION PAGE!!!  HERE IS AN EXAMPLE ONLY	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-7243260-2']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>	
+-->
 	<%= csrf_meta_tag %>
+
 	<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
 	<%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
 	<%= stylesheet_link_tag 'blueprint/plugins/tabsplugin/screen',  :media => 'screen,projection' %>
+
+	<!-- favicon_link_tag ... -->	
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+
+	<%= stylesheet_link_tag 'blueprint/plugins/photogalleryplugin/style',  :media => 'screen, projection' %>
 
 	<!--[if lt IE 8]>
 	  <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
 	<![endif]-->
 	
-  	</head>
+	<style>
+
+			span.reference{
+				position:fixed;
+				left:10px;
+				bottom:10px;
+				font-size:12px;
+			}
+			span.reference a{
+				color:#666;
+				text-shadow:1px 1px 1px #fff;
+				text-transform:uppercase;
+				text-decoration:none;
+				margin-right:30px;
+			}
+			span.reference a:hover{
+				color:#333;
+			}
+			.content{
+				width:700px;
+				margin:0 auto;
+			}
+
+			.msg_slideshow{
+				margin:0 auto;
+			}
+			a.back{
+				background:transparent url(/back.png) no-repeat top left;
+				height:13px;
+				width:248px;
+				display:block;
+				clear:both;
+				text-indent:-9000px;
+				margin:20px auto;
+			}
+			a.back:hover{
+				background-position:0px -13px;
+			}
+		</style>	
+	
+  </head>
 
 	<body>
 

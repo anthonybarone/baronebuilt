@@ -1,4 +1,6 @@
 Baronebuilt::Application.routes.draw do
+  get "pages/photo_gallery"
+
   get "pages/home"
 
   get "pages/neighborhoods"

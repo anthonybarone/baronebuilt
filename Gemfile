@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.1'
 
-gem "compass", ">= 0.11.5"
+gem 'jquery-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -29,6 +29,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # and rake tasks are available in development mode:
 
 group :development do
+	gem 'jquery-rails'
 	gem 'rspec-rails', '2.0.0.beta.18'
 	gem 'autotest-growl'
 	gem 'autotest-fsevent'
