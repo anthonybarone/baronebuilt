@@ -9,6 +9,10 @@ gem 'jquery-rails'
 
 gem 'sqlite3', :require => 'sqlite3'
 
+gem 'thin'
+
+gem 'delayed_job'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
