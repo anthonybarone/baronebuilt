@@ -50,6 +50,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     nokogiri (1.5.0)
+    pg (0.11.0)
     polyglot (0.3.3)
     rack (1.2.4)
     rack-mount (0.6.14)
@@ -104,6 +105,7 @@ DEPENDENCIES
   autotest-fsevent
   autotest-growl
   jquery-rails
+  pg
   rails (= 3.0.1)
   rspec (= 2.0.0.beta.18)
   rspec-rails (= 2.0.0.beta.18)
